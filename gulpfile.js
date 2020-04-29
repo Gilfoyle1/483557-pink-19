@@ -120,8 +120,8 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  "minify-js",
   "sprite",
+  "minify-js",
   "html",
   // "minify"
 ));

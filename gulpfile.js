@@ -15,6 +15,8 @@ var webp = require("gulp-webp")
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
+var minifyjs = require("gulp-js-minify");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -101,12 +103,27 @@ gulp.task("refresh", function (done) {
   done();
 });
 
+gulp.task("minify", function () {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task("minify-js", function (done) {
+  gulp.src("source/js/*.js")
+    .pipe(minifyjs())
+    .pipe(gulp.dest("build/js/"));
+  done();
+});
+
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
   "sprite",
-  "html"
+  "minify-js",
+  "html",
+  // "minify"
 ));
 
 gulp.task("start", gulp.series("build", "server"));

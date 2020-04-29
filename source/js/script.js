@@ -4,7 +4,7 @@ var navToggle = document.querySelector('.page-header__toggle');
 var colorHeader = document.querySelector(".page-header__control");
 
 navMain.classList.remove('main-nav--nojs');
-navToggle.classList.add('page-header__toggle--opened');
+colorHeader.classList.add("page-header__control-bgc");
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {

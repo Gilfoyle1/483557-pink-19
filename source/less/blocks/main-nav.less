@@ -4,6 +4,7 @@
   font-weight: bold;
   text-transform: uppercase;
   background-color: @dark;
+  display: none;
 
   @keyframes open {
     0% {
@@ -71,6 +72,10 @@
     font-weight: 400;
     text-transform: capitalize;
     background-color: transparent;
+
+    &--closed {
+      display: block;
+    }
   }
 
   .main-nav__list {

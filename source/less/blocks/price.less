@@ -37,23 +37,25 @@
   &--column1 {
     background-color: transparent;
   }
-
-  &--hit {
-    position: absolute;
-    width: 74px;
-    height: 73px;
-    background-image: url("./../img/bg-hit.svg");
-    background-repeat: no-repeat;
-    transform: translate(-73px, -18px);
-  }
-
-  &--text {
-    line-height: 21px;
-    text-transform: uppercase;
-    transform: rotate(-45deg) translate(-22px, 1px);
-    display: inline-block;
-  }
 }
+
+.price__title-label {
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  background-image: url("./../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  transform: translate(-73px, -18px);
+}
+
+.price__title-text {
+  display: inline-block;
+  line-height: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+  transform: rotate(-45deg) translate(-22px, 1px);
+}
+
 
 .price__title-name {
   display: block;
@@ -202,20 +204,19 @@
     &--column1 {
       background-color: @grey;
     }
-
-    &--text {
-      transform: rotate(-45deg) translate(-14px, -2px);
-    }
-
-    &--hit {
-      width: 61px;
-      height: 61px;
-      background-image: url("./../img/bg-hit-tablet.svg");
-      background-repeat: no-repeat;
-      transform: translate(-30px, -11px);
-    }
   }
 
+  .price__title-label {
+    width: 61px;
+    height: 61px;
+    background-image: url("./../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+    transform: translate(-30px, -11px);
+  }
+
+  .price__title-text {
+    transform: rotate(-45deg) translate(-14px, -2px);
+  }
 
   .price__title-name {
     font-size: 16px;
@@ -230,7 +231,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .price {
     padding-top: 40px;
     background-position: top;
@@ -238,8 +239,8 @@
   }
 
   .price__container {
-    width: 1200px;
-    padding: 118px 0 93px;
+    width: 960px;
+    padding: 121px 0 96px;
   }
 
   .price__table {
@@ -247,19 +248,19 @@
   }
 
   .price__title-blog {
-    padding: 16px 30px 23px;
+    padding: 16px 30px 20px;
+  }
 
-    &--hit {
-      width: 74px;
-      height: 73px;
-      background-image: url("./../img/bg-hit.svg");
-      background-repeat: no-repeat;
-      transform: translate(-30px, -16px);
-    }
+  .price__title-label {
+    width: 74px;
+    height: 73px;
+    background-image: url("./../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    transform: translate(-30px, -16px);
+  }
 
-    &--text {
-      transform: rotate(-45deg) translate(-20px, 2px);
-    }
+  .price__title-text {
+    transform: rotate(-45deg) translate(-20px, 2px);
   }
 
   .price__title-name {

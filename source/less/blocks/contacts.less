@@ -1,3 +1,15 @@
+.contacts {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  background-color: @white;
+}
+
+.contacts-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .contacts__title {
   margin: 0 auto;
   font-size: 24px;
@@ -37,6 +49,11 @@
 }
 
 @media (min-width: 660px) {
+  .contacts-container {
+    width: 660px;
+    padding-top: 48px;
+  }
+
   .contacts__title {
     font-size: 40px;
     padding: 0 46px;
@@ -65,7 +82,15 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
+  .contacts {
+    margin-top: 18px;
+  }
+
+  .contacts-container {
+    width: 960px;
+  }
+
   .contacts__title {
     width: 560px;
     padding-bottom: 38px;

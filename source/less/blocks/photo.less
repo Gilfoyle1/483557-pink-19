@@ -91,7 +91,7 @@
 
 .photo__comment {
   width: 251px;
-  margin: 0 auto;
+  margin: 0 0 0 17px;
   padding: 0 0 15px;
   line-height: 24px;
 }
@@ -105,10 +105,13 @@
 }
 
 .photo__like {
-  width: 13px;
-  height: 12px;
+  width: 15px;
+  height: 13px;
+  padding: 0;
   background-image: url("./../img/icon-heart.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 12px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -181,7 +184,7 @@
   .photo__wrapper {
     flex-direction: row-reverse;
     width: 269px;
-    padding-left: 27px;
+    padding-left: 28px;
 
     &--panorama {
       width: 148px;
@@ -197,9 +200,13 @@
     padding-top: 25px;
   }
 
-  .photo__comment--panorama {
-    width: 565px;
-    padding-bottom: 0;
+  .photo__comment {
+    margin-left: 28px;
+
+    &--panorama {
+      width: 565px;
+      padding-bottom: 0;
+    }
   }
 }
 

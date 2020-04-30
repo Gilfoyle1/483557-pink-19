@@ -1326,7 +1326,7 @@ img {
 .reviews__toggle:active {
   background-color: rgba(40, 54, 69, 0.1);
 }
-.reviews__prew {
+.reviews__previous {
   display: none;
 }
 .reviews__next {
@@ -1419,11 +1419,11 @@ img {
     border: none;
     cursor: pointer;
   }
-  .reviews__prew:hover,
-  .reviews__prew:focus {
+  .reviews__previous:hover,
+  .reviews__previous:focus {
     opacity: 0.6;
   }
-  .reviews__prew:active {
+  .reviews__previous:active {
     opacity: 0.1;
   }
   .reviews__next {

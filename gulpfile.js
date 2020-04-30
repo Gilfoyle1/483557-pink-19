@@ -84,7 +84,7 @@ gulp.task("webp", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**",
     "source/img/**",
     "source/js/**",
     "source/*.ico"
@@ -120,10 +120,10 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  "sprite",
   "minify-js",
-  "html",
-  // "minify"
+  "sprite",
+  "minify",
+  "html"
 ));
 
 gulp.task("start", gulp.series("build", "server"));

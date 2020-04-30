@@ -20,8 +20,8 @@
   padding: 20px 0 24px;
 }
 
-.page-header__control-bgc {
-  background-color: @dark-bgc;
+.page-header__background {
+  background-color: @black-transparent;
 }
 
 .page-header__logo {
@@ -82,15 +82,15 @@
 
 .page-header__toggle:active {
   .page-header__burger {
-    background-color: @pink-opac;
+    background-color: @pink-transparent;
   }
 
   .page-header__burger::before {
-    background-color: @pink-opac;
+    background-color: @pink-transparent;
   }
 
   .page-header__burger::after {
-    background-color: @pink-opac;
+    background-color: @pink-transparent;
   }
 }
 
@@ -186,7 +186,7 @@
 
 @media (min-width: 960px) {
   .page-header {
-    background-color: @dark-bgc;
+    background-color: @black-transparent;
     z-index: 1;
     position: relative;
   }

@@ -115,7 +115,7 @@
 
 .upgrade__btn-form-wrapper {
   padding: 36px 0 29px;
-  border-top: 1px solid @dark-opac;
+  border-top: 1px solid @dark-transparent;
 }
 
 .upgrade__btn {
@@ -145,8 +145,8 @@
   }
 
   &--cancel {
-    color: @dark-opac;
-    border: 3px solid @dark-opac;
+    color: @dark-transparent;
+    border: 3px solid @dark-transparent;
   }
 
   &--cancel:hover,
@@ -260,7 +260,7 @@
     left: -55px;
     width: 275px;
     height: 1px;
-    background-color: @dark-opac;
+    background-color: @dark-transparent;
   }
 
   .upgrade__range {
@@ -271,10 +271,14 @@
   }
 
   .upgrade__range-btn {
-    right: 43px;
+    right: 39px;
 
     &--contrast {
-      right: 92px;
+      right: 90px;
+    }
+
+    &--fill {
+      left: 27px;
     }
   }
 

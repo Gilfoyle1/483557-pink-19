@@ -102,7 +102,7 @@
   padding: 15px 20px;
   font-size: 18px;
   line-height: 30px;
-  border: 2px solid @brdr-clr;
+  border: 2px solid @border-color;
 
   &:hover,
   &focus {
@@ -157,7 +157,7 @@
   width: 39px;
   height: 39px;
   background-repeat: no-repeat;
-  border: 2px solid @brdr-clr;
+  border: 2px solid @border-color;
   background-color: @white;
 }
 
@@ -203,7 +203,7 @@
   height: 39px;
   background-repeat: no-repeat;
   background-color: @white;
-  border: 2px solid @brdr-clr;
+  border: 2px solid @border-color;
   border-radius: 50%;
 }
 
@@ -233,7 +233,7 @@
   padding: 15px 17px;
   font-size: 18px;
   line-height: 30px;
-  border: 2px solid @brdr-clr;
+  border: 2px solid @border-color;
 
   &:hover,
   &:focus {
@@ -283,8 +283,8 @@
   }
 
   &:disabled {
-    background-color: @brdr-clr;
-    border: solid 2px @brdr-clr;
+    background-color: @border-color;
+    border: solid 2px @border-color;
   }
 }
 
@@ -419,8 +419,8 @@
       height: 60px;
       background-image: url("./../img/icon-phone.svg");
       background-repeat: no-repeat;
-      background-position: center center;
-      background-color: @brdr-clr;
+      background-position: center;
+      background-color: @border-color;
     }
 
     &--email::before {
@@ -432,8 +432,8 @@
       height: 60px;
       background-image: url("./../img/icon-mail.svg");
       background-repeat: no-repeat;
-      background-position: center center;
-      background-color: @brdr-clr;
+      background-position: center;
+      background-color: @border-color;
     }
 
     &--phone {
@@ -465,9 +465,14 @@
 
   .contest__about-text {
     width: 525px;
+    min-height: 64px;
 
     &--phone {
-      width: 496px;
+      width: 500px;
+    }
+
+    &--email {
+      width: 500px;
     }
   }
 

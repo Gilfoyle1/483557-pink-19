@@ -83,23 +83,23 @@
         <ul class="photo__list">
           <li class="photo__item">
             <div class="photo__item-wrapper">
-              <a class="photo__link" href="#">
-                <picture>
-                  <source type="image/webp" media="(min-width: 960px)" srcset="./img/webp/photo-car-desktop@1x.webp 1x, ./img/webp/photo-car-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="./img/webp/photo-car-tablet@1x.webp 1x, ./img/webp/photo-car-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/webp/photo-car-mobile@1x.webp 1x, ./img/webp/photo-car-mobile@2x.webp 2x">
-                  <source media="(min-width: 960px)" srcset="./img/photo-car-desktop@1x.jpg 1x, ./img/photo-car-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg 1x, ./img/photo-car-tablet@2x.jpg 2x">
-                  <img class="photo__link-image" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x" alt="Фото белой машины" width="280" height="180">
-                </picture>
-              </a>
-              <div class="photo__description">
+              <div class="photo__item-content">
+                <a class="photo__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 960px)" srcset="./img/webp/photo-car-desktop@1x.webp 1x, ./img/webp/photo-car-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="./img/webp/photo-car-tablet@1x.webp 1x, ./img/webp/photo-car-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/webp/photo-car-mobile@1x.webp 1x, ./img/webp/photo-car-mobile@2x.webp 2x">
+                    <source media="(min-width: 960px)" srcset="./img/photo-car-desktop@1x.jpg 1x, ./img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg 1x, ./img/photo-car-tablet@2x.jpg 2x">
+                    <img class="photo__link-image" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x" alt="Фото белой машины" width="280" height="180">
+                  </picture>
+                </a>
                 <h3 class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></h3>
                 <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <div class="photo__wrapper">
-                  <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
-                  <b class="photo__like-number">Нравится: 356</b>
-                </div>
+              </div>
+              <div class="photo__wrapper">
+                <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
+                <b class="photo__like-number">Нравится: 356</b>
               </div>
             </div>
           </li>
@@ -117,14 +117,12 @@
                       height="180">
                   </picture>
                 </a>
-                <div class="photo__description">
-                  <h3 class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></h3>
-                  <p class="photo__comment">Соседи будут рады!</p>
-                </div>
-                <div class="photo__wrapper">
-                  <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
-                  <b class="photo__like-number">Нравится: 666</b>
-                </div>
+                <h3 class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></h3>
+                <p class="photo__comment">Соседи будут рады!</p>
+              </div>
+              <div class="photo__wrapper">
+                <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
+                <b class="photo__like-number">Нравится: 666</b>
               </div>
             </div>
           </li>
@@ -143,14 +141,12 @@
                       width="280" height="180">
                   </picture>
                 </a>
-                <div class="photo__description">
-                  <h3 class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></h3>
-                  <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                </div>
-                <div class="photo__wrapper">
-                  <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
-                  <b class="photo__like-number">Нравится: 215</b>
-                </div>
+                <h3 class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></h3>
+                <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              </div>
+              <div class="photo__wrapper">
+                <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
+                <b class="photo__like-number">Нравится: 215</b>
               </div>
             </div>
           </li>
@@ -169,14 +165,12 @@
                       width="280" height="180">
                   </picture>
                 </a>
-                <div class="photo__description">
-                  <h3 class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></h3>
-                  <p class="photo__comment">Самая кубанская в мире!</p>
-                </div>
-                <div class="photo__wrapper">
-                  <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
-                  <b class="photo__like-number">Нравится: 4</b>
-                </div>
+                <h3 class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></h3>
+                <p class="photo__comment">Самая кубанская в мире!</p>
+              </div>
+              <div class="photo__wrapper">
+                <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
+                <b class="photo__like-number">Нравится: 4</b>
               </div>
             </div>
           </li>
@@ -195,14 +189,12 @@
                       height="180">
                   </picture>
                 </a>
-                <div class="photo__description">
-                  <h3 class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></h3>
-                  <p class="photo__comment">Где снег-то?</p>
-                </div>
-                <div class="photo__wrapper">
-                  <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
-                  <b class="photo__like-number">Нравится: 150</b>
-                </div>
+                <h3 class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></h3>
+                <p class="photo__comment">Где снег-то?</p>
+              </div>
+              <div class="photo__wrapper">
+                <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
+                <b class="photo__like-number">Нравится: 150</b>
               </div>
             </div>
           </li>
@@ -221,14 +213,12 @@
                       height="180">
                   </picture>
                 </a>
-                <div class="photo__description">
-                  <h3 class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></h3>
-                  <p class="photo__comment">Всем GM и взаимные лайки!</p>
-                </div>
-                <div class="photo__wrapper">
-                  <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
-                  <b class="photo__like-number">Нравится: 2560</b>
-                </div>
+                <h3 class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></h3>
+                <p class="photo__comment">Всем GM и взаимные лайки!</p>
+              </div>
+              <div class="photo__wrapper">
+                <button class="photo__like" type="button"><span class="visually-hidden">Нравится</span></button>
+                <b class="photo__like-number">Нравится: 2560</b>
               </div>
             </div>
           </li>

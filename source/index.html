@@ -19,11 +19,15 @@
     <div class="page-header__wrapper">
       <div class="page-header__control">
         <a class="page-header__logo">
-          <svg class="page-header__logo-icon" width="147px" height="40px">
+          <span class="visually-hidden">Логотип приложения Pink</span>
+          <svg class="page-header__logo-icon" width="147" height="40">
             <use xlink:href="#sprite-logo-header"></use>
           </svg>
         </a>
-        <button class="page-header__toggle" type="button">
+        <!--page-header__toggle--nojs(убирает кнопку меню при рабочем js)
+             page-header__toggle--opened(крестик закрытия меню)
+             page-header__burger(кнопка закрытое меню)-->
+        <button class="page-header__toggle page-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <span class="page-header__burger"></span>
         </button>
@@ -171,31 +175,25 @@
             <td class="price__options-access price__options-access--available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Розовый фильтр</span>
-                <span class="price__options-image">
-                  <svg class="price__image-yes" width="31px" height="21px">
-                    <use xlink:href="#sprite-icon-yes"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-yes" width="31" height="21">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                </svg>
               </p>
             </td>
             <td class="price__options-access price__options-access--available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Розовый фильтр</span>
-                <span class="price__options-image">
-                  <svg class="price__image-yes" width="31px" height="21px">
-                    <use xlink:href="#sprite-icon-yes"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-yes" width="31" height="21">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                </svg>
               </p>
             </td>
             <td class="price__options-access price__options-access--available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Розовый фильтр</span>
-                <span class="price__options-image">
-                  <svg class="price__image-yes" width="31px" height="21px">
-                    <use xlink:href="#sprite-icon-yes"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-yes" width="31" height="21">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                </svg>
               </p>
             </td>
           </tr>
@@ -204,31 +202,25 @@
             <td class="price__options-access price__options-access--not-available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Смайлики</span>
-                <span class="price__options-image">
-                  <svg class="price__image-no" width="27px" height="27px">
-                    <use xlink:href="#sprite-icon-no"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-no" width="27" height="27">
+                  <use xlink:href="#sprite-icon-no"></use>
+                </svg>
               </p>
             </td>
             <td class="price__options-access price__options-access--available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Смайлики</span>
-                <span class="price__options-image">
-                  <svg class="price__image-yes" width="31px" height="21px">
-                    <use xlink:href="#sprite-icon-yes"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-yes" width="31" height="21">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                </svg>
               </p>
             </td>
             <td class="price__options-access price__options-access--available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Смайлики</span>
-                <span class="price__options-image">
-                  <svg class="price__image-yes" width="31px" height="21px">
-                    <use xlink:href="#sprite-icon-yes"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-yes" width="31" height="21">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                </svg>
               </p>
             </td>
           </tr>
@@ -237,31 +229,25 @@
             <td class="price__options-access price__options-access--not-available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Комментарии</span>
-                <span class="price__options-image">
-                  <svg class="price__image-no" width="27px" height="27px">
-                    <use xlink:href="#sprite-icon-no"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-no" width="27" height="27">
+                  <use xlink:href="#sprite-icon-no"></use>
+                </svg>
               </p>
             </td>
             <td class="price__options-access price__options-access--not-available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Комментарии</span>
-                <span class="price__options-image">
-                  <svg class="price__image-no" width="27px" height="27px">
-                    <use xlink:href="#sprite-icon-no"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-no" width="27" height="27">
+                  <use xlink:href="#sprite-icon-no"></use>
+                </svg>
               </p>
             </td>
             <td class="price__options-access price__options-access--available">
               <p class="price__options-wrapper">
                 <span class="price__options-mobile-only">Комментарии</span>
-                <span class="price__options-image">
-                  <svg class="price__image-yes" width="31px" height="21px">
-                    <use xlink:href="#sprite-icon-yes"></use>
-                  </svg>
-                </span>
+                <svg class="price__image-yes" width="31" height="21">
+                  <use xlink:href="#sprite-icon-yes"></use>
+                </svg>
               </p>
             </td>
           </tr>
@@ -307,28 +293,29 @@
     </section>
     <div class="page-footer__social-wrapper page-footer__social-wrapper--cut">
       <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <svg class="page-footer__logo" width="147px" height="40px">
+        <span class="visually-hidden">Логотип приложения Pink. Ссылка на страницу интенсива</span>
+        <svg class="page-footer__logo" width="147" height="40">
           <use xlink:href="#sprite-logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social">
         <li class="page-footer__item">
           <a class="page-footer__link" href="https://twitter.com/" target="_blank"><span class="visually-hidden">Twitter</span>
-            <svg width="18px" height="15px">
+            <svg width="18" height="15">
               <use xlink:href="#sprite-icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link" href="https://facebook.com/" target="_blank"><span class="visually-hidden">Facebook</span>
-            <svg width="9px" height="19px">
+            <svg width="9" height="19">
               <use xlink:href="#sprite-icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link" href="https://youtube.com/" target="_blank"><span class="visually-hidden">Youtube</span>
-            <svg width="15px" height="14px">
+            <svg width="15" height="14">
               <use xlink:href="#sprite-icon-youtube"></use>
             </svg>
           </a>
@@ -338,7 +325,7 @@
         <b class="page-footer__copyright-text">Разработано</b>
         <a class="page-footer__copyright-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="visually-hidden">HTML Academy</span>
-          <svg width="27px" height="34px">
+          <svg width="27" height="34">
             <use xlink:href="#sprite-logo-htmlacademy"></use>
           </svg>
         </a>

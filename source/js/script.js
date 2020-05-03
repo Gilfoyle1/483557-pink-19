@@ -4,6 +4,7 @@ var navToggle = document.querySelector('.page-header__toggle');
 var colorHeader = document.querySelector(".page-header__control");
 
 navMain.classList.remove('main-nav--nojs');
+navToggle.classList.remove('page-header__toggle--nojs');
 colorHeader.classList.add('page-header__background');
 
 navToggle.addEventListener('click', function () {

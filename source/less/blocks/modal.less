@@ -1,22 +1,26 @@
 .modal {
   position: fixed;
-  top: 20%;
+  top: 60%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 320px;
-  margin-left: -160px;
-  display: none; //включение pop-up
+  display: none;
   z-index: 2;
   text-align: center;
   background-color: @white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
 
-  &--error &__btn-wrapper {
-    background-color: @white;
-  }
+.modal--show {
+  display: block;//включение pop-up
+}
 
-  &--error {
-    top: 60%;
-  }
+.modal__success {// Просто для того, чтобы было видно второй pop-up, так они идут друг под другом
+  top: 20%;
+}
+
+.modal__error .modal__btn-wrapper {
+  background-color: @white;
 }
 
 .modal__title {
@@ -76,7 +80,6 @@
   .modal {
     width: 460px;
     left: 50%;
-    margin-left: -230px;
 
     &__title {
       padding: 37px 100px 22px;
@@ -99,7 +102,6 @@
 @media (min-width: 960px) {
   .modal {
     width: 780px;
-    margin-left: -390px;
 
     &--error &__btn-wrapper {
       background-color: @grey;

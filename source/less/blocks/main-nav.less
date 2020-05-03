@@ -67,7 +67,7 @@
 
 @media (min-width: 960px) {
   .main-nav {
-    width: 640px;
+    width: 630px;
     padding-top: 0;
     font-weight: 400;
     text-transform: capitalize;
@@ -82,21 +82,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 620px;
+    width: 630px;
     margin: 0 auto;
   }
 
   .main-nav__item {
-    padding: 29px 0;
+    position: relative;
+    margin-right: 10px;
+    padding: 10px 0;
     line-height: 18px;
     box-shadow: none;
-    position: relative;
 
     &--active::after {
       content: "";
       position: absolute;
       left: 0;
-      top: 60px;
+      top: 42px;
       width: 100%;
       height: 2px;
       background-color: @white;

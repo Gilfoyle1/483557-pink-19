@@ -68,6 +68,17 @@
   opacity: 1;
 }
 
+.upgrade__svg--current {
+  fill: @pink;
+  opacity: 1;
+}
+
+.upgrade__btn-custom:hover .upgrade__svg--current,
+.upgrade__btn-custom:focus .upgrade__svg--current {
+  fill: @pink;
+  opacity: 1;
+}
+
 .upgrade__range-block {
   position: relative;
   width: 280px;
@@ -231,6 +242,8 @@
   .upgrade__svg {
     width: 22px;
     height: 22px;
+    fill: @pink;
+    opacity: 1;
 
     &--fill {
       width: 24px;
@@ -240,6 +253,16 @@
       width: 16px;
       height: 16px;
     }
+  }
+
+  .upgrade__btn-custom:hover .upgrade__svg,
+  .upgrade__btn-custom:focus .upgrade__svg {
+    opacity: 1;
+  }
+
+  .upgrade__btn-custom:active .upgrade__svg {
+    fill: @pink;
+    opacity: 1;
   }
 
   .upgrade__range-block {

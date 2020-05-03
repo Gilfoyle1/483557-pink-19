@@ -70,6 +70,15 @@
   text-align: center;
 }
 
+.photo__link {
+  display: block;
+  min-height: 180px;
+
+  &--panorama {
+    min-height: 137px;
+  }
+}
+
 .photo__best-text {
   display: inline-block;
   padding: 12px 0;
@@ -163,6 +172,14 @@
   .photo__label-panorama {
     left: 76%;
     top: 57px;
+  }
+
+  .photo__link {
+    min-height: 300px;
+
+    &--panorama {
+      min-height: 509px;
+    }
   }
 
   .photo__item {
@@ -272,5 +289,13 @@
   .photo__label-panorama {
     left: 84.3%;
     top: 54px;
+  }
+
+  .photo__link {
+    min-height: 400px;
+
+    &--panorama {
+      min-height: 506px;
+    }
   }
 }

@@ -19,7 +19,7 @@
     <div class="page-header__wrapper">
       <div class="page-header__control">
         <a class="page-header__logo" href="index.html">
-          <span class="visually-hidden">Логотип приложения Pink</span>
+          <span class="visually-hidden">Переход на главную страницу</span>
           <svg class="page-header__logo-icon" width="147" height="40">
             <use xlink:href="#sprite-logo-header"></use>
           </svg>
@@ -54,9 +54,11 @@
       <section class="photo__panorama">
         <h2 class="visually-hidden">Панорама дня</h2>
         <div class="photo__panorama-wrapper">
-          <div class="photo__label-panorama"><span class="photo__best-text">Панорама дня</span></div>
+          <div class="photo__label-panorama">
+            <span class="photo__best-text">Панорама дня</span>
+          </div>
           <a class="photo__link photo__link--panorama" href="#">
-            <picture>
+            <picture class="photo__image">
               <source type="image/webp" media="(min-width: 960px)" srcset="./img/webp/panorama-desktop@1x.webp 1x, ./img/webp/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="./img/webp/panorama-tablet@1x.webp 1x, ./img/webp/panorama-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/webp/panorama-mobile@1x.webp 1x, ./img/webp/panorama-mobile@2x.webp 2x">
@@ -79,7 +81,7 @@
           </div>
         </div>
       </section>
-      <div class="photo_container">
+      <div class="photo__container">
         <ul class="photo__list">
           <li class="photo__item">
             <div class="photo__item-wrapper">

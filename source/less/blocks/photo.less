@@ -3,7 +3,7 @@
   background-color: @white;
 }
 
-.photo_container {
+.photo__container {
   width: 320px;
   margin: 0 auto;
 }
@@ -140,7 +140,7 @@
 }
 
 @media (min-width: 660px) {
-  .photo_container {
+  .photo__container {
     width: 660px;
   }
 
@@ -234,7 +234,7 @@
 }
 
 @media (min-width: 960px) {
-  .photo_container {
+  .photo__container {
     width: 960px;
   }
 
@@ -284,6 +284,7 @@
 
   .photo__panorama-img {
     min-height: 506px;
+    width: auto;
   }
 
   .photo__label-panorama {
@@ -297,5 +298,11 @@
     &--panorama {
       min-height: 506px;
     }
+  }
+
+  .photo__image {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
 }

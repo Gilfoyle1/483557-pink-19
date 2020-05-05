@@ -81,14 +81,14 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 630px;
     margin: 0 auto;
   }
 
   .main-nav__item {
     position: relative;
-    margin-right: 10px;
+    margin-right: 80px;
     padding: 10px 0;
     line-height: 18px;
     box-shadow: none;
@@ -102,6 +102,10 @@
       height: 2px;
       background-color: @white;
     }
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
   }
 
   .main-nav__item-link:active {
